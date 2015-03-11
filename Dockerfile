@@ -4,7 +4,7 @@ MAINTAINER Brad Allen <brad@emptyscope.com>
 RUN \
   apt-get update && \
   apt-get upgrade -y && \
-  apt-get install -y curl git build-essential libssl-dev
+  apt-get install -y curl git build-essential libssl-dev libffi-dev
 
 RUN adduser --disabled-password --home=/ruby --gecos "" ruby
 
